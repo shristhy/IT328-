@@ -1,0 +1,67 @@
+
+
+header, main, footer
+{
+    min-width: 855px;
+}
+
+body
+{
+background: #f9e933;
+}
+
+header
+{
+background: white;
+}
+
+main
+{
+background: white;
+}
+
+body {
+background: #f9e933;
+}
+
+header, main, footer
+{ min-width: 855px;
+}
+
+header .container, main .container, footer .container
+{ max-width: 855px;
+margin: auto;
+}
+
+header
+{
+background: white;
+}
+
+main
+{
+background: white;
+}
+
+
+header {
+background: white; overflow: auto;
+}
+
+header h1
+{ float: left;
+width: 570px; }
+
+header nav
+{ float: right;
+width: 285px; }
+
+.tabs a span {
+display: inline-block; border-radius: 5px 5px 0 0; width: 100px; margin-right: 10px; text-align: center; background: #ddd;
+padding: 5px;
+}
+
+
+.tabs a span.active {
+        background: #eee;
+}
