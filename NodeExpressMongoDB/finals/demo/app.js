@@ -17,7 +17,8 @@ var users = require('./routes/users');
 
 var app = express();
 
-
+app = express();
+app.locals.moment = require('moment');
 
 
 // view engine setup

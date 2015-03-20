@@ -9,6 +9,6 @@ block content
 		input#inputUserTitle(type="text", placeholder="Title", name="titl")
 		input#inputUserCompany(type="text", placeholder="Company", name="company")
 		input#inputUserMet(type="text", placeholder="Met", name="met")
-		input#inputUserDate(type="text", placeholder="Date", name="date")
+		input#inputUserDate(type="text", placeholder="Date", name="date",value="#{moment().format('MM/DD/YYYY')}")
 		input#inputUserComment(type="text", placeholder="Comment", name="comment")
 		button#btnSubmit(type="submit") submit 
