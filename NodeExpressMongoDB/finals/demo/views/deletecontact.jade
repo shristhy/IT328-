@@ -1,8 +1,12 @@
 extends layout
 
 block content
+
+
 	h1= title
-	p confirm delete
+		h2.
+			Are you sure you want to delete?
 
 	form#DeleteContact(name='deletecontact', method='post' action='')
-		button#btnSubmit(type="submit") submit
+		button.btn.btn-info(type="submit") Delete
+	a.btn.btn-info( href="/contactlist") No, go back
