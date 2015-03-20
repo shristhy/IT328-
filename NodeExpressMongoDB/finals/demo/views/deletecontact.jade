@@ -1,0 +1,8 @@
+extends layout
+
+block content
+	h1= title
+	p confirm delete
+
+	form#DeleteContact(name='deletecontact', method='post' action='')
+		button#btnSubmit(type="submit") submit

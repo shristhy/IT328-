@@ -1,0 +1,14 @@
+extends layout
+
+block content
+	h1= title
+	form#formAddUser(name="addcontact",method="post",action="/addcontact")
+		input#inputUserFirst(type="text", placeholder="First", name="first")
+		input#inputUserLast(type="text", placeholder="Last", name="last")
+		input#inputUserEmail(type="text", placeholder="Email", name="email")
+		input#inputUserTitle(type="text", placeholder="Title", name="titl")
+		input#inputUserCompany(type="text", placeholder="Company", name="company")
+		input#inputUserMet(type="text", placeholder="Met", name="met")
+		input#inputUserDate(type="text", placeholder="Date", name="date")
+		input#inputUserComment(type="text", placeholder="Comment", name="comment")
+		button#btnSubmit(type="submit") submit 

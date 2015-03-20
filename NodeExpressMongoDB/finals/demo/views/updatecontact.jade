@@ -1,0 +1,18 @@
+extends layout
+
+block content
+	h1.
+		Edit Contacts
+	form(name="editcontact", method="post", action='')
+			input(type="text", name="first", value="#{contacts.first}")
+			input(type="text", name="last", value="#{contacts.last}")
+			input(type="text", name="titl", value="#{contacts.titl}")
+			input(type="text", name="company", value="#{contacts.company}")
+			input(type="text", name="met", value="#{contacts.met}")
+			input(type="text", name="date", value="#{contacts.date}")
+			input(type="text", name="email", value="#{contacts.email}")
+			input(type="text", name="comments", value="#{contacts.comments}")
+			button(type="submit") Update
+
+
+	

@@ -1,0 +1,36 @@
+extends layout
+
+block content
+	h1.
+		Contact List
+	table.table.table-striped
+		thead
+			tr.head
+				th First Name
+				th Last Name
+				th Email
+				th Company
+				th Where Met
+				th Date Met
+				th Title
+				th Comments
+				th Edit
+				th Delete?
+		tbody
+		each contacts in contactlist
+			tr
+				td #{contacts.first}
+				td #{contacts.last}
+				td #{contacts.email}
+				td #{contacts.company}
+				td #{contacts.met}
+				td #{contacts.date}
+				td #{contacts.title}
+				td #{contacts.comments}
+
+				td
+					a(href='updatecontact/#{contacts._id}') Edit
+				td 
+					a(href='deletecontact/#{contacts._id}') Delete
+
+				
